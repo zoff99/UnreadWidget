@@ -13,11 +13,11 @@ Normal App Icon on the left // UnreadWidget on the right
 ## CustomWidgetProvider.java
 
 configure these 3 values to your needs:
-<pre>
+```
 public static final int MAX_COUNT = 20;
 public static Class ToOpenActivity = org.example.myapp.WantToStartThisActivity.class;
 public static String baseClass = "org.example.myapp";
-</pre>
+```
 
 if more than MAX_COUNT unread count, then MAX_COUNT"+" will be displayed
 ToOpenActivity specifies the Activity that you want to open, when the Widget is clicked
@@ -77,7 +77,7 @@ with the Base Class of your Project</B>
 
 in your Project add:
 
-<pre>
+```
 import com.zoffcc.applications.CustomWidgetProvider;
 .
 .
@@ -101,11 +101,11 @@ catch (Throwable t)
 .
 .
 .
-</pre>
+```
 
-<B>
-enter_your_unread_count_here_as_integer is the number you want displayed over your Widget.
 
-if you want to hide the Count, just give 0 as enter_your_unread_count_here_as_integer
-</b>
+**enter_your_unread_count_here_as_integer** is the number you want displayed over your Widget.
+
+if you want to hide the Count, just give 0 as **enter_your_unread_count_here_as_integer**
+
 
