@@ -65,6 +65,8 @@ add these lines to your AndroidManifest.xml (inside the application tag):
 *org.example.myapp*
 with the Base Class of your Project</B>
 
+
+
 # Update the Widget in your App
 
 in your Project add:
@@ -95,5 +97,9 @@ catch (Throwable t)
 .
 </pre>
 
+<B>
+enter_your_unread_count_here_as_integer is the number you want displayed over your Widget.
 
+if you want to hide the Count, just give 0 as enter_your_unread_count_here_as_integer
+</b>
 
