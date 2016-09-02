@@ -1,10 +1,16 @@
 # UnreadWidget
 Widget for any Android App to show unread count
 
-# Adding to your Project:
+## Adding to your Project:
 Just drop all the files into your Project.
 
-# CustomWidgetProvider.java
+## Example Widget
+
+![This is what it looks like](https://github.com/zoff99/UnreadWidget/raw/master/doc/UnreadWidget_Sample.png "This is what it looks like")
+
+Normal App Icon on the left // UnreadWidget on the right
+
+## CustomWidgetProvider.java
 
 configure these 3 values to your needs:
 <pre>
@@ -17,7 +23,7 @@ if more than MAX_COUNT unread count, then MAX_COUNT"+" will be displayed
 ToOpenActivity specifies the Activity that you want to open, when the Widget is clicked
 baseClass is the Base Class of your Project
 
-# Resources
+## Resources
 
 you will need to already have these resources in your Project:
 
@@ -30,7 +36,7 @@ this should be your App's Homescreen Icon
 this should be the String that shows under your App's Homescreen Icon
 
 
-# AndroidManifest.xml
+## AndroidManifest.xml
 
 add these lines to your AndroidManifest.xml (inside the application tag):
 <pre>
@@ -67,7 +73,7 @@ with the Base Class of your Project</B>
 
 
 
-# Update the Widget in your App
+## Update the Widget in your App
 
 in your Project add:
 
