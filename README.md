@@ -20,7 +20,9 @@ public static String baseClass = "org.example.myapp";
 ```
 
 if more than MAX_COUNT unread count, then MAX_COUNT"+" will be displayed
+
 ToOpenActivity specifies the Activity that you want to open, when the Widget is clicked
+
 baseClass is the Base Class of your Project
 
 ## Resources
