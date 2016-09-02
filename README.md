@@ -13,7 +13,7 @@ Normal App Icon on the left // UnreadWidget on the right
 ## CustomWidgetProvider.java
 
 configure these 3 values to your needs:
-```
+```java
 public static final int MAX_COUNT = 20;
 public static Class ToOpenActivity = org.example.myapp.WantToStartThisActivity.class;
 public static String baseClass = "org.example.myapp";
@@ -69,9 +69,9 @@ add these lines to your AndroidManifest.xml (inside the application tag):
         &lt;!-- unread badge widget --&gt;
 </pre>
 
-<B>and replace
-*org.example.myapp*
-with the Base Class of your Project</B>
+and replace
+<B>*org.example.myapp*</B>
+with the Base Class of your Project
 
 
 
@@ -79,7 +79,7 @@ with the Base Class of your Project</B>
 
 in your Project add:
 
-```
+```java
 import com.zoffcc.applications.CustomWidgetProvider;
 .
 .
