@@ -17,6 +17,19 @@ if more than MAX_COUNT unread count, then MAX_COUNT"+" will be displayed
 ToOpenActivity specifies the Activity that you want to open, when the Widget is clicked
 baseClass is the Base Class of your Project
 
+# Resources
+
+you will need to already have these resources in your Project:
+
+*@drawable/icon*
+
+this should be your App's Homescreen Icon
+
+*@string/app_name*
+
+this should be the String that shows under your App's Homescreen Icon
+
+
 # AndroidManifest.xml
 
 add these lines to your AndroidManifest.xml (inside the application tag):
@@ -48,9 +61,9 @@ add these lines to your AndroidManifest.xml (inside the application tag):
         &lt;!-- unread badge widget --&gt;
 </pre>
 
-and replace
+<B>and replace
 *org.example.myapp*
-with the Base Classe of your Project
+with the Base Class of your Project</B>
 
 # Update the Widget in your App
 
