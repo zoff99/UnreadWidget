@@ -37,7 +37,7 @@ add these lines to your AndroidManifest.xml (inside the application tag):
             android:name="com.zoffcc.applications.BadgeWidgetIntentReceiver"
             android:label="widgetBroadcastReceiver"&gt;
             &lt;intent-filter&gt;
-                &lt;action android:name="org.smssecure.smssecure.CHANGE_BADGE" /&gt;
+                &lt;action android:name="org.example.myapp.CHANGE_BADGE" /&gt;
             &lt;/intent-filter&gt;
 
             &lt;meta-data
@@ -47,4 +47,40 @@ add these lines to your AndroidManifest.xml (inside the application tag):
         &lt;!-- unread badge widget --&gt;
         &lt;!-- unread badge widget --&gt;
 </pre>
+
+and replace
+*org.example.myapp*
+with the Base Classe of your Project
+
+# Update the Widget in your App
+
+in your Project add:
+
+<pre>
+import com.zoffcc.applications.CustomWidgetProvider;
+.
+.
+.
+.
+try
+{
+        // ---- update the widget if present ----
+        final Intent intent2 = new Intent();
+        intent2.setAction(CustomWidgetProvider.baseClass + ".CHANGE_BADGE");
+        intent2.putExtra("UNREAD_COUNT_NEW", enter_your_unread_count_here_as_integer);
+        context.getApplicationContext().sendBroadcast(intent2);
+        // ---- update the widget if present ----
+}
+catch (Exception e)
+{
+}
+catch (Throwable t)
+{
+}
+.
+.
+.
+</pre>
+
+
 
